@@ -1,0 +1,30 @@
+.app__footer {
+    width: 100%;
+    padding: 2.50rem 10% 1rem;
+}
+
+.app__footer_bg {
+    width: 100%;
+    background-color: var(--footer-color);
+}
+
+.app__footer_shadow {
+    width: 100vw;
+    box-shadow: 0 0 48px 32px var(--footer-color);
+    transition: box-shadow 0.5s;
+}
+
+.app__footer-sites {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    h4 {
+        padding-bottom: 0.80rem;
+    }
+
+    a {
+        line-height: 1.75;
+    }
+}

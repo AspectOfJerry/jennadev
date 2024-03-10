@@ -1,0 +1,114 @@
+.app_socials {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 4rem 3% 0;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.app__socials-grid {
+    flex: 1.3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.app__socials-item {
+    text-align: center;
+    margin: 0 3.50rem 4rem;
+    transition: all 0.30s ease-in-out;
+
+    a {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 0.50rem;
+        border-radius: 30%;
+        background-color: var(--secondary-color);
+        display: flex;
+        justify-content: center; // center horizontally
+        align-items: center; // center vertically
+
+        img {
+            object-fit: contain;
+            width: 60%;
+            height: 60%;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 0.35rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin: 1rem 2rem;
+    }
+}
+
+.app__socials-texts {
+    flex: 0.7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-top: 2rem;
+
+    @media screen and (max-width: 900px) {
+        margin-top: 3rem;
+    }
+
+    .app__socials-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        text-align: right;
+        margin-bottom: 3rem;
+        width: 100%;
+
+        @media screen and (max-width: 900px) {
+            margin-bottom: 2rem;
+            align-items: revert;
+            text-align: revert;
+        }
+
+        p {
+            margin-top: 5px
+        }
+    }
+
+    .app__image-socials-text-image {
+        // height: 64px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

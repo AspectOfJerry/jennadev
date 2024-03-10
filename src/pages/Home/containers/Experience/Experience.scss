@@ -1,0 +1,55 @@
+.app__exp {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__exp-years {
+    margin: 3rem 5% 0;
+
+    @media screen and (max-width: 480px) {
+        margin: 3rem 0 0;
+    }
+}
+
+.app__exp-year {
+    margin-bottom: 1rem;
+}
+
+.app__exp-year-text {
+    color: var(--alt-color);
+    margin: 2rem 0 0.5rem;
+
+    span {
+        color: var(--light-color);
+    }
+
+    @media screen and (max-width: 480px) {
+    }
+}
+
+.app__exp-experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1.5rem;
+        object-fit: contain;
+        box-shadow: 0 0 3px var(--shadow-color);
+        border-radius: 20%;
+        padding: 3px;
+    }
+
+    h3 {
+        color: var(--alt-color);
+        margin-bottom: 0.25rem;
+    }
+
+    p {
+        color: var(--dark-color);
+    }
+}

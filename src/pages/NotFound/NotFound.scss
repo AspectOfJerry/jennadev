@@ -1,0 +1,48 @@
+.nf {
+    background-color: var(--secondary-color);
+    height: 100vh;
+    width: 100vw;
+    padding-top: 7rem;
+    transition: background-color 0.75s;
+}
+
+.nf__nf-text {
+    margin: 3rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.nf__fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--darkest-color);
+    z-index: 9998;
+}
+
+.nf__fade-overlay-text {
+    font-size: 1.75rem;
+
+    // transition: color 0.50s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.nf__redirect-text {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: var(--darkest-color);
+    line-height: 1.75;
+    transition: transform 1s ease-out, color 0.50s;
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.10rem;
+    }
+}
