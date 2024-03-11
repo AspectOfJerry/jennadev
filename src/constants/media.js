@@ -3,7 +3,7 @@ import arrow_up from "../assets/arrow_up.svg";
 import favicon from "../assets/favicon.png";
 import jerry_favicon from "../assets/jerry-favicon.png";
 import riot_games from "../assets/socials/riot_games.png";
-import placeholder from "../assets/placeholder.png";
+import placeholder from "../assets/google_add_photo-placeholder.svg";
 
 // instagram
 import instagram_gradient from "../assets/socials/instagram_gradient.png";

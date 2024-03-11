@@ -32,7 +32,6 @@ const Experience = () => {
             </SectionTitle>
 
             <div className="app__exp-years">
-                <p className="p-text">🚧 work in progress 🚧</p>
                 {experience.map((year) => {
                     return (
                         <motion.div

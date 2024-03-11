@@ -62,10 +62,7 @@ const NotFound = () => {
                 </AnimatePresence>
                 <h1 className="nf__nf-text ctext">
                     oh no... Error 404 <br /> <br />
-                    Whoops! It seems you've stumbled into the digital wilderness. <br />
-                    The only way out is to press the mystical button below that says "Take me home". <br />
-                    Rumor has it, it's the secret passage to a realm of bug-free adventures and endless wonders. <br />
-                    Good luck, brave explorer!
+                    Whoops! It seems you've stumbled into the digital wilderness.
                 </h1>
                 <p
                     className="nf__redirect-text"

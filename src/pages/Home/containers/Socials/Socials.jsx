@@ -9,16 +9,17 @@ import SectionTitle from "../../../components/SectionTitle";
 
 // color: H, S:35%, V: 100%
 const socials = [
-    {name: "⭐ Instagram", color: "#ffa6c3", description: "jenna._png", iconUrl: media.instagram_gradient, url: "https://www.instagram.com/aspectofjerry/"},
+    {name: "⭐ Instagram", color: "#ffa6c3", description: "jenna._png", iconUrl: media.instagram_gradient, url: "https://www.instagram.com/jenna._png/"},
     // {name: "Discord", color: "#a6adff", description: "", iconUrl: media.clyde_icon_blurple},
-    {name: "Snapchat", color: "#fffea6", description: "jenna_bottoni", iconUrl: media.snapcode, url: "https://t.snapchat.com/ZyCoCeUP"},
+    {name: "Snapchat", color: "#fffea6", description: "jenna_bottoni", iconUrl: media.placeholder, url: "https://t.snapchat.com/6M6UTjKk"},
+    {name: "Twitter X", color: "#000000", description: "---", iconUrl: "", url: ""},
 ];
 
 const texts = [
-    {title: "Contact info", description: "📡 You can find my contact information and social media links here.", imageUrl: ""},
-    {title: "Public Email", description: <>📧 <a href="mailto:@.">@.</a></>, imageUrl: ""},
-    {title: "", description: "💭 Most of the time, you'll find me on ...Instagram.", imageUrl: ""},
-    {title: "", description: "✨ ...Let's build something magic together...!", imageUrl: ""},
+    {title: "Contact info", description: "📡 ...? You can find my contact information and social media links here.", imageUrl: ""},
+    {title: "Public Email", description: <>📧 <a href="mailto:@.">...? @.</a></>, imageUrl: ""},
+    {title: "", description: "💭 Most of the time, you'll find me on ...? Instagram.", imageUrl: ""},
+    {title: "", description: "✨ ...? Let's build something magic together!", imageUrl: ""},
 ];
 
 const Socials = (themeMode) => {

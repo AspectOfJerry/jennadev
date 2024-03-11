@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.app__header {
+.header {
     background-color: var(--head-background-color);
     align-items: center;
     justify-content: center;
@@ -12,14 +12,60 @@
     transition: background-color 0.75s;
 }
 
-.app__text-container {
+.header__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__image {
+    height: 128px;
+    width: auto;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.header__text-container {
+    font-family: "Nunito", "serif";
+    //font-family: "Aleo", serif;
+
     position: relative;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: var(--darkest-color);
+
+    transition: color 0.50s;
     z-index: 1;
 }
 
-.app__text-container-line {
+.header__text-big {
+    font-weight: 300;
+    font-size: 7rem;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 8rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 5rem;
+    }
+}
+
+.header__text-small {
+    font-weight: 400;
+    font-size: 1.75rem;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+}
+
+.header__text-line {
     position: absolute;
     bottom: -32px;
     left: 50%;
@@ -31,52 +77,8 @@
     0 0 0 3px var(--glow-color);
 }
 
-.app__header_shadow {
+.header__shadow {
     width: 100vw;
     box-shadow: 0 0 48px 32px var(--head-background-color);
     transition: box-shadow 0.75s;
-}
-
-.app__header-text-big {
-    //font-family: "Nunito", "serif";
-    font-family: "Aleo", serif;
-    font-weight: 300;
-    font-size: 4rem;
-    margin-right: 5px;
-    color: var(--darkest-color);
-
-    transition: color 0.5s;
-
-    @media screen and (max-width: 1024px) {
-        font-size: 8rem;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 5rem;
-    }
-}
-
-.app__header-small {
-    font-family: "Aleo", serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    position: relative;
-    color: var(--darkest-color);
-
-    transition: color 0.5s;
-
-    @media screen and (max-width: 1024px) {
-        font-size: 1.75rem;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 1.5rem;
-    }
-}
-
-.app__typing-texts {
-    text-align: center;
-    width: 100%;
-    padding: 72px 2% 0;
-    min-height: 8rem;
 }

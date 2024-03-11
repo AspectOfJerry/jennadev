@@ -1,27 +1,27 @@
-.app__footer {
+.footer {
     width: 100%;
-    padding: 2.50rem 10% 1rem;
-}
-
-.app__footer_bg {
-    width: 100%;
+    padding: 2rem 10% 0.5rem;
     background-color: var(--footer-color);
+
+    @media screen and (max-width: 480px) {
+        padding: 1rem 8% 0.5rem;
+    }
 }
 
-.app__footer_shadow {
+.footer__shadow {
     width: 100vw;
     box-shadow: 0 0 48px 32px var(--footer-color);
     transition: box-shadow 0.5s;
 }
 
-.app__footer-sites {
+.footer__sites {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
 
     h4 {
-        padding-bottom: 0.80rem;
+        margin-bottom: 0.80rem;
     }
 
     a {

@@ -20,7 +20,7 @@
         "@babel/plugin-proposal-private-property-in-object": "7.21.0-placeholder-for-preset-env.2"
     },
     "scripts": {
-        "start": "set PORT=3001 && react-scripts start",
+        "start": "react-scripts start",
         "build": "react-scripts build"
     },
     "repository": {

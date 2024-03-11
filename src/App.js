@@ -6,7 +6,6 @@ import {Navbar} from "./pages/components/index.js";
 import OpeningAnimation from "./pages/components/OpeningAnimation"
 
 // pages/Header (main)
-import {AppReturnToTop} from "./pages/Home/components/index.js";
 import {
     AppHeader,
     AppAbout,
@@ -22,13 +21,14 @@ import "./App.scss";
 
 // pages/Countdown
 import {Countdown} from "./pages/Countdown/index.js";
+import {AppReturnToTop} from "./pages/Home/components";
 
 
 const theme_group = {
     localStorageKey: "color-mode",
     themes: [
         {
-            name: "Default",
+            name: "Pink",
             className: "theme_default",
             mode: "light"
         },
