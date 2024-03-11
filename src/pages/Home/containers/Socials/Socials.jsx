@@ -29,12 +29,12 @@ const Socials = (themeMode) => {
                 <span>So</span>cials
             </SectionTitle>
 
-            <div className="app__socials-container">
-                <motion.div className="app__socials-grid">
+            <div className="socials__container">
+                <motion.div className="socials__grid">
                     {socials.map((social) => {
                         return (
                             <motion.div
-                                className="app__socials-item app__flex"
+                                className="socials__item"
                                 key={social.name}
                             >
                                 <motion.a href={social.url}
@@ -49,18 +49,18 @@ const Socials = (themeMode) => {
                         )
                     })}
                 </motion.div>
-                <motion.div className="app__socials-texts">
+                <motion.div className="socials__texts">
                     {texts.map((text, index) => {
                         return (
                             <motion.div
                                 whileInView={{opacity: [0, 1], x: [50, 0]}}
                                 transition={{duration: 0.65, ease: "easeInOut"}}
-                                className="app__socials-text app__flex"
+                                className="socials__text"
                                 key={index}
                             >
                                 <h4 className="bold-text">{text.title}</h4>
                                 <p className="p-text">{text.description}</p>
-                                <div className="app__image-socials-text-image">
+                                <div className="socials__text-image">
                                     {text.imageUrl ? <img src={text.imageUrl} alt={text.title} /> : ""}
                                 </div>
                             </motion.div>

@@ -72,9 +72,8 @@ const Navbar = ({toggleTheme, themes, theme, links, extLinks, forceShrink, icon}
                 animate={{opacity: [0, 1], y: [-25, 0]}}
                 transition={{delay: 0.80, type: "spring", stiffness: 100, damping: 25}}
             >
-                {/* List of links */}
                 {links.map((dest, index) => (
-                    <li className="app__flex text" key={index}>
+                    <li className="text" key={index}>
                         <a className="text-underline" href={dest.link}>{dest.name}</a>
                     </li>
                 ))}
@@ -86,7 +85,7 @@ const Navbar = ({toggleTheme, themes, theme, links, extLinks, forceShrink, icon}
                 transition={{delay: 0.95, type: "spring", stiffness: 100, damping: 25}}
             >
                 {extLinks.map((dest, index) => (
-                    <li className="app__flex text" key={index}>
+                    <li className="text" key={index}>
                         <a className="text-underline" href={dest.link} target="_blank" rel="noreferrer">{dest.name}</a>
                     </li>
                 ))}
@@ -106,10 +105,9 @@ const Navbar = ({toggleTheme, themes, theme, links, extLinks, forceShrink, icon}
 
                 <div>
                     <HiX onClick={() => setShowMenu(false)} />
-                    <ul>
-                        {/* List of links */}
+                    <ul className="app__navbar-nav-links">
                         {links.map((dest, index) => (
-                            <li className="app__flex text" key={index}>
+                            <li className="text" key={index}>
                                 <a className="text-underline" onClick={() => setShowMenu(false)} href={dest.link}>
                                     {dest.name}
                                 </a>
@@ -118,7 +116,7 @@ const Navbar = ({toggleTheme, themes, theme, links, extLinks, forceShrink, icon}
                     </ul>
                     <ul className="app__navbar-ext-links">
                         {extLinks.map((dest, index) => (
-                            <li className="app__flex text" key={index}>
+                            <li className="text" key={index}>
                                 <a className="text-underline" onClick={() => setShowMenu(false)} href={dest.link} target="_blank" rel="noreferrer">
                                     {dest.name}
                                 </a>

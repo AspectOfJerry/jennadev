@@ -2,14 +2,12 @@ import React from "react";
 import {motion} from "framer-motion";
 
 import "./Header.scss";
-import {media} from "../../../../constants";
 
 const Header = () => {
     return (
         <>
             <div id="header" className="header app__container">
                 <div className="header__container">
-                    <img className="header__image" src={media.placeholder} alt="Jenna" />
                     <div className="header__text-container">
                         <motion.h1
                             className="header__text-big"
@@ -37,7 +35,7 @@ const Header = () => {
                                 delay: 1.10,
                             }}
                         >
-                            This page is a work in progress.
+                            I'm Jenna
                         </motion.h1>
 
                         <motion.div

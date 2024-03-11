@@ -1,10 +1,10 @@
-.app_socials {
+.socials {
     flex: 1;
     width: 100%;
     flex-direction: column;
 }
 
-.app__socials-container {
+.socials__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +18,7 @@
     }
 }
 
-.app__socials-grid {
+.socials__grid {
     flex: 1.3;
     display: flex;
     flex-wrap: wrap;
@@ -32,9 +32,13 @@
     }
 }
 
-.app__socials-item {
+.socials__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3.45rem 2.75rem;
+
     text-align: center;
-    margin: 0 3.50rem 4rem;
     transition: all 0.30s ease-in-out;
 
     a {
@@ -49,8 +53,8 @@
 
         img {
             object-fit: contain;
-            width: 60%;
-            height: 60%;
+            width: 65%;
+            height: 65%;
         }
 
         @media screen and (max-width: 480px) {
@@ -70,7 +74,7 @@
     }
 }
 
-.app__socials-texts {
+.socials__texts {
     flex: 0.7;
     display: flex;
     justify-content: flex-start;
@@ -83,7 +87,7 @@
         margin-top: 3rem;
     }
 
-    .app__socials-text {
+    .socials__text {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -103,7 +107,7 @@
         }
     }
 
-    .app__image-socials-text-image {
+    .socials__text-image {
         // height: 64px;
 
         img {

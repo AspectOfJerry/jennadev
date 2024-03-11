@@ -92,11 +92,13 @@
 .app__navbar-nav-links,
 .app__navbar-ext-links {
     li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
-        display: block;
+
         // margin is in .app__navbar.ul.li and .app__navbar-shrunk.ul.li
         cursor: pointer;
-        flex-direction: column;
 
         a {
             color: var(--darker-color);

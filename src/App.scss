@@ -110,31 +110,6 @@ html.theme_blue {
     transition: background-color 0.65s;
 }
 
-.app__container {
-    width: 100%;
-    min-height: 80vh;
-
-    display: flex;
-    flex-direction: row;
-}
-
-.app__flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.app__wrapper {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-    padding: 4rem 2rem;
-
-    @media screen and (max-width: 480px) {
-        padding: 3rem 1rem 2rem;
-    }
-}
-
 .hidden {
     display: none;
 }
@@ -234,9 +209,9 @@ html.theme_blue {
 }
 
 .p-text {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--darker-color);
-    line-height: 1.50;
+    line-height: 1.70;
 
     transition: color 0.50s;
 
@@ -245,22 +220,10 @@ html.theme_blue {
     }
 }
 
-.desc-text {
-    font-size: 0.95rem;
-    color: var(--darker-color);
-    line-height: 1.45;
-
-    transition: color 0.50s;
-
-    @media screen and (max-width: 480px) {
-        font-size: 0.90rem;
-    }
-}
-
 .text {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: var(--darkest-color);
-    line-height: 1.75;
+    line-height: 1.80;
     font-weight: 400;
 
     transition: color 0.50s;

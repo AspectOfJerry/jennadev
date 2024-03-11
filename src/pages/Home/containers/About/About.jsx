@@ -19,7 +19,7 @@ const text_fade_in = {
 const About = () => {
     return (
         <>
-            {/*<p className="p-text app__about_note">
+            {/*<p className="p-text about__note">
                 📌 Birthday! 🎂🥳
             </p>*/}
             <div style={{marginTop: "2rem"}} />
@@ -28,17 +28,15 @@ const About = () => {
             </SectionTitle>
 
             <motion.p
-                className="p-text app__about-text"
+                className="p-text about__text"
                 whileInView={text_fade_in.whileInView}
                 transition={text_fade_in.transition}
             >
-                👋 Hey there, I'm Jenna - ...?, 🍁Canada...?!
-                <br /><br />
-                💡 ...?
-                <br /><br />
-                🔍 ...?
-                <br /><br />
-                🎮 ...?
+                👋 Hey there, I'm Jenna! My name is Jenna, and I'm here to tell you a bit about myself.
+                <br />
+                Picture this: Jenna, that's me. Yep, that's right, I'm Jenna, and I'm ready to spill the beans about who I am.
+                <br />
+                So buckle up, because here comes Jenna, telling you all about Jenna.
             </motion.p>
         </>
     );
