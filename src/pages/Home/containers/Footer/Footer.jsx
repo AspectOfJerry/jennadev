@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright" style={{backgroundColor: "var(--footer-color)", paddingTop: "0"}}>
-                <p>Copyright © 2024 <a href="https://jerrydev.net/" style={{color: "inherit"}}>Jerry F.</a>, Jenna B.</p>
+                <p>Copyright © 2024 <a href="https://jerrydev.net/" style={{color: "inherit"}}>Jerry</a>, Jenna</p>
             </div>
         </>
     );
