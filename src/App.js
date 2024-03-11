@@ -87,6 +87,11 @@ const App = () => {
     const [theme, setTheme] = useState(() => getInitialColorMode(theme_group));
 
     useEffect(() => {
+        document.documentElement.className = theme.className;
+    }, [theme]);
+
+    // opening animation timer
+    useEffect(() => {
         const timeout = setTimeout(() => {
             setIsReady(true);
         }, 5000); // Show the animation for 5 seconds
@@ -108,11 +113,11 @@ const App = () => {
     };
 
     useEffect(() => {
-        const persisted_theme = window.localStorage.getItem("color-mode");
+        const persisted_theme = window.localStorage.getItem(theme_group.localStorageKey);
         const has_persisted_theme = typeof persisted_theme === "string";
 
         if (!has_persisted_theme) {
-            window.localStorage.setItem("color-mode", "theme_default");
+            window.localStorage.setItem(theme_group.localStorageKey, theme_group.themes[0].className);
         }
     }, []);
 
