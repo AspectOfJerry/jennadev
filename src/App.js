@@ -19,8 +19,8 @@ import {NotFound} from "./pages/NotFound/index.js";
 
 import "./App.scss";
 
-// pages/Countdown
-import {Countdown} from "./pages/Countdown/index.js";
+// pages/Bday
+import {Bday} from "./pages/Bday/index.js";
 import {AppReturnToTop} from "./pages/Home/components";
 
 
@@ -134,7 +134,7 @@ const App = () => {
                                         {name: "Socials", link: "#socials"},
                                         {name: "Experience", link: "#experience"},
                                     ]}
-                                    extLinks={[]}
+                                    extLinks={[{name: "🎂 Countdown", link: "/bday"}]}
                                     forceShrink={false}
                             />
                             <AppReturnToTop />
@@ -146,17 +146,17 @@ const App = () => {
                     }
                 />
 
-                <Route path="/countdown" element={
+                <Route path="/bday" element={
                     <>
                         <Navbar
                             toggleTheme={() => toggleTheme(theme_group)}
                             themes={theme_group.themes}
                             theme={theme}
                             links={[]}
-                            extLinks={[{name: "Countdown 🎂", link: "https://jenna.jerrydev.net/countdown"}]}
+                            extLinks={[]}
                             forceShrink={true}
                         />
-                        <Countdown themeType={theme.theme} />
+                        <Bday themeType={theme.theme} />
                     </>
                 } />
 
@@ -171,7 +171,7 @@ const App = () => {
                                 themes={theme_group.themes}
                                 theme={theme}
                                 links={[{name: "Take me home", link: "/"}]}
-                                extLinks={[{name: "Status page", link: "https://status.jerrydev.net"}]}
+                                extLinks={[]}
                                 forceShrink={false}
                             />
                             <NotFound />
