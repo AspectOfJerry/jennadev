@@ -10,7 +10,7 @@ const Header = () => {
                 <div className="header__container">
                     <div className="header__text-container">
                         <motion.h1
-                            className="header__text-big"
+                            className="header__hero-text"
                             animate={{
                                 y: [75, 0], // up
                                 opacity: [0, 100],

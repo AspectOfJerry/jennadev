@@ -1,6 +1,5 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {media} from "../../../../constants";
 
 import {AppWrap} from "../../../components/index.js";
 import "./Experience.scss";
